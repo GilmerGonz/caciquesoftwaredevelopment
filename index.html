@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CACIQUE SOFTWARE DEVELOPMENT — Agencia de Desarrollo en Venezuela</title>
+    <script>
+      (function() {
+        // Intercept and swallow benign fetch assignment errors from third-party polyfills
+        window.addEventListener('error', function(e) {
+          var msg = (e && (e.message || (e.error && e.error.message))) || '';
+          if (typeof msg === 'string' && msg.indexOf('fetch') !== -1) {
+            if (e.preventDefault) e.preventDefault();
+            return true;
+          }
+        }, true);
+
+        try {
+          var _fetch = window.fetch;
+          var makeProp = function() {
+            return {
+              get: function() { return _fetch; },
+              set: function(v) { _fetch = v; },
+              configurable: true,
+              enumerable: true
+            };
+          };
+
+          var targets = [
+            window,
+            typeof globalThis !== 'undefined' ? globalThis : null,
+            typeof self !== 'undefined' ? self : null,
+            window.Window ? window.Window.prototype : null
+          ];
+
+          for (var i = 0; i < targets.length; i++) {
+            var t = targets[i];
+            if (t) {
+              try {
+                Object.defineProperty(t, 'fetch', makeProp());
+              } catch (e) {}
+            }
+          }
+        } catch (err) {}
+      })();
+    </script>
+    <!-- Google Fonts: Barlow Condensed & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
