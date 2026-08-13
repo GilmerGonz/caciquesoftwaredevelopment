@@ -111,13 +111,13 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
               onClose();
               onOpenConsultation();
             }}
-            className="btn-primary flex-1 text-center"
+            className="btn-primary w-full sm:w-auto flex-1 text-center"
           >
             QUIERO RESULTADOS SIMILARES
           </button>
           <button
             onClick={onClose}
-            className="btn-secondary"
+            className="btn-secondary w-full sm:w-auto"
           >
             CERRAR
           </button>

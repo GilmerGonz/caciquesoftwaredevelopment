@@ -61,7 +61,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenConsultation }) 
       {/* 3D Wireframe Scene - Bound to Hero section */}
       <ThreeHeroCanvas />
 
-      <div className="relative z-10 max-w-[1280px] mx-auto px-6 md:px-12 w-full">
+      <div className="relative z-10 max-w-[1280px] mx-auto px-4 sm:px-8 md:px-12 w-full">
         <span className="badge mb-6 inline-block bg-[#FFFFFF]">Agencia de Desarrollo — Venezuela</span>
 
         <h1
@@ -85,13 +85,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenConsultation }) 
         <div ref={ctasRef} className="flex flex-wrap gap-4 mb-10">
           <button
             onClick={onOpenConsultation}
-            className="btn-primary"
+            className="btn-primary w-full sm:w-auto"
           >
             Hablar con un desarrollador
           </button>
           <button
             onClick={onOpenConsultation}
-            className="btn-secondary"
+            className="btn-secondary w-full sm:w-auto"
           >
             Contáctanos
           </button>

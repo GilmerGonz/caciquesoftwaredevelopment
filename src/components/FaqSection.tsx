@@ -42,7 +42,7 @@ export const FaqSection: React.FC = () => {
 
   return (
     <section id="faq" className="py-[clamp(60px,10vh,120px)] bg-[#F5F5F5] relative z-10 border-t border-[#0a0a0a]">
-      <div className="max-w-[1280px] mx-auto px-6 md:px-12">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-8 md:px-12">
         <ScrollReveal direction="up" delay={0.05} className="text-center flex flex-col items-center">
           <span className="badge mb-4 inline-block bg-[#FFFFFF]">
             RESPUESTAS CLARAS
@@ -59,7 +59,7 @@ export const FaqSection: React.FC = () => {
               return (
                 <div
                   key={index}
-                  className="border border-[#0a0a0a] bg-[#FFFFFF] transition-all shadow-[4px_4px_0px_#0a0a0a]"
+                  className="border border-[#0a0a0a] bg-[#FFFFFF] transition-all shadow-[4px_4px_0px_#0a0a0a] md:shadow-[6px_6px_0px_#0a0a0a]"
                 >
                   <button
                     onClick={() => toggleFaq(index)}

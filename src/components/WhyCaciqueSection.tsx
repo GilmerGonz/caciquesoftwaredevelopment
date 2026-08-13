@@ -34,7 +34,7 @@ export const WhyCaciqueSection: React.FC = () => {
 
   return (
     <section id="why" ref={sectionRef} className="py-[clamp(60px,10vh,120px)] bg-[#0a0a0a] text-[#F5F5F5] relative z-10 border-t border-[#1a1a1a]">
-      <div className="max-w-[1280px] mx-auto px-6 md:px-12">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-8 md:px-12">
         <span className="font-body text-[11px] font-normal tracking-[0.2em] uppercase text-[#aaaaaa] block mb-4">
           POR QUE CACIQUE
         </span>
@@ -42,8 +42,8 @@ export const WhyCaciqueSection: React.FC = () => {
           LA AUTORIDAD EN TECNOLOGIA PARA VENEZUELA
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-          <div className="diff-item border border-[#555555] p-8 bg-[#1a1a1a] shadow-[6px_6px_0px_#F5F5F5]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-12">
+          <div className="diff-item border border-[#555555] p-5 sm:p-8 bg-[#1a1a1a] shadow-[4px_4px_0px_#F5F5F5] md:shadow-[6px_6px_0px_#F5F5F5]">
             <span className="font-body text-[18px] font-bold tracking-[0.15em] uppercase text-[#FFFFFF] block mb-3">
               VELOCIDAD DE ENTREGA
             </span>
@@ -52,7 +52,7 @@ export const WhyCaciqueSection: React.FC = () => {
             </p>
           </div>
 
-          <div className="diff-item border border-[#555555] p-8 bg-[#1a1a1a] shadow-[6px_6px_0px_#F5F5F5]">
+          <div className="diff-item border border-[#555555] p-5 sm:p-8 bg-[#1a1a1a] shadow-[4px_4px_0px_#F5F5F5] md:shadow-[6px_6px_0px_#F5F5F5]">
             <span className="font-body text-[18px] font-bold tracking-[0.15em] uppercase text-[#FFFFFF] block mb-3">
               GARANTÍA DE SATISFACCIÓN
             </span>
@@ -61,7 +61,7 @@ export const WhyCaciqueSection: React.FC = () => {
             </p>
           </div>
 
-          <div className="diff-item border border-[#555555] p-8 bg-[#1a1a1a] shadow-[6px_6px_0px_#F5F5F5]">
+          <div className="diff-item border border-[#555555] p-5 sm:p-8 bg-[#1a1a1a] shadow-[4px_4px_0px_#F5F5F5] md:shadow-[6px_6px_0px_#F5F5F5]">
             <span className="font-body text-[18px] font-bold tracking-[0.15em] uppercase text-[#FFFFFF] block mb-3">
               CÓDIGO 100% TUYO
             </span>
@@ -70,7 +70,7 @@ export const WhyCaciqueSection: React.FC = () => {
             </p>
           </div>
 
-          <div className="diff-item border border-[#555555] p-8 bg-[#1a1a1a] shadow-[6px_6px_0px_#F5F5F5]">
+          <div className="diff-item border border-[#555555] p-5 sm:p-8 bg-[#1a1a1a] shadow-[4px_4px_0px_#F5F5F5] md:shadow-[6px_6px_0px_#F5F5F5]">
             <span className="font-body text-[18px] font-bold tracking-[0.15em] uppercase text-[#FFFFFF] block mb-3">
               TECNOLOGÍA DE PUNTA
             </span>
@@ -79,7 +79,7 @@ export const WhyCaciqueSection: React.FC = () => {
             </p>
           </div>
 
-          <div className="diff-item border border-[#555555] p-8 bg-[#1a1a1a] shadow-[6px_6px_0px_#F5F5F5]">
+          <div className="diff-item border border-[#555555] p-5 sm:p-8 bg-[#1a1a1a] shadow-[4px_4px_0px_#F5F5F5] md:shadow-[6px_6px_0px_#F5F5F5]">
             <span className="font-body text-[18px] font-bold tracking-[0.15em] uppercase text-[#FFFFFF] block mb-3">
               HECHOS EN VENEZUELA
             </span>
@@ -88,7 +88,7 @@ export const WhyCaciqueSection: React.FC = () => {
             </p>
           </div>
 
-          <div className="diff-item border border-[#555555] p-8 bg-[#1a1a1a] shadow-[6px_6px_0px_#F5F5F5]">
+          <div className="diff-item border border-[#555555] p-5 sm:p-8 bg-[#1a1a1a] shadow-[4px_4px_0px_#F5F5F5] md:shadow-[6px_6px_0px_#F5F5F5]">
             <span className="font-body text-[18px] font-bold tracking-[0.15em] uppercase text-[#FFFFFF] block mb-3">
               SOPORTE POST-ENTREGA
             </span>

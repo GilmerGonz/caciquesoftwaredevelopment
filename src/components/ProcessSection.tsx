@@ -8,7 +8,7 @@ interface ProcessSectionProps {
 export const ProcessSection: React.FC<ProcessSectionProps> = ({ onOpenConsultation }) => {
   return (
     <section id="proceso" className="py-[clamp(60px,10vh,120px)] bg-[#F5F5F5] relative z-10 border-t border-[#1a1a1a]">
-      <div className="max-w-[1280px] mx-auto px-6 md:px-12">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-8 md:px-12">
         <ScrollReveal direction="up" delay={0.05}>
           <span className="font-body text-[11px] font-normal tracking-[0.2em] uppercase text-[#555555] block mb-4">
             CÓMO TRABAJAMOS
@@ -18,10 +18,10 @@ export const ProcessSection: React.FC<ProcessSectionProps> = ({ onOpenConsultati
           </h2>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mt-12">
           {/* Step 1 */}
           <ScrollReveal direction="up" delay={0.1}>
-            <div className="process-step bg-[#FFFFFF] border border-[#1a1a1a] p-8 shadow-[6px_6px_0px_#0a0a0a] h-full flex flex-col justify-between">
+            <div className="process-step bg-[#FFFFFF] border border-[#1a1a1a] p-5 sm:p-8 shadow-[4px_4px_0px_#0a0a0a] md:shadow-[6px_6px_0px_#0a0a0a] h-full flex flex-col justify-between">
               <div>
                 <span className="font-headline text-[56px] font-black text-[#0a0a0a] block leading-none">
                   01
@@ -41,7 +41,7 @@ export const ProcessSection: React.FC<ProcessSectionProps> = ({ onOpenConsultati
 
           {/* Step 2 */}
           <ScrollReveal direction="up" delay={0.2}>
-            <div className="process-step bg-[#FFFFFF] border border-[#1a1a1a] p-8 shadow-[6px_6px_0px_#0a0a0a] h-full flex flex-col justify-between">
+            <div className="process-step bg-[#FFFFFF] border border-[#1a1a1a] p-5 sm:p-8 shadow-[4px_4px_0px_#0a0a0a] md:shadow-[6px_6px_0px_#0a0a0a] h-full flex flex-col justify-between">
               <div>
                 <span className="font-headline text-[56px] font-black text-[#0a0a0a] block leading-none">
                   02
@@ -61,7 +61,7 @@ export const ProcessSection: React.FC<ProcessSectionProps> = ({ onOpenConsultati
 
           {/* Step 3 */}
           <ScrollReveal direction="up" delay={0.3}>
-            <div className="process-step bg-[#FFFFFF] border border-[#1a1a1a] p-8 shadow-[6px_6px_0px_#0a0a0a] h-full flex flex-col justify-between">
+            <div className="process-step bg-[#FFFFFF] border border-[#1a1a1a] p-5 sm:p-8 shadow-[4px_4px_0px_#0a0a0a] md:shadow-[6px_6px_0px_#0a0a0a] h-full flex flex-col justify-between">
               <div>
                 <span className="font-headline text-[56px] font-black text-[#0a0a0a] block leading-none">
                   03
@@ -84,7 +84,7 @@ export const ProcessSection: React.FC<ProcessSectionProps> = ({ onOpenConsultati
           <div className="text-center mt-12">
             <button
               onClick={onOpenConsultation}
-              className="btn-primary"
+              className="btn-primary w-full sm:w-auto"
             >
               Contáctanos
             </button>

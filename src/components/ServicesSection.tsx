@@ -8,7 +8,7 @@ interface ServicesSectionProps {
 export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenConsultation }) => {
   return (
     <section id="servicios" className="py-[clamp(60px,10vh,120px)] bg-[#0a0a0a] text-[#F5F5F5] relative z-10">
-      <div className="max-w-[1280px] mx-auto px-6 md:px-12">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-8 md:px-12">
         <ScrollReveal direction="up" delay={0.05}>
           <span className="font-body text-[11px] font-bold tracking-[0.2em] uppercase text-[#aaaaaa] block mb-4">
             LO QUE CONSTRUIMOS
@@ -18,10 +18,10 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenConsulta
           </h2>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-stretch">
           {/* Service 1: Desarrollo Web */}
           <ScrollReveal direction="up" delay={0.1}>
-            <div className="service-card bg-[#141414] border-2 border-[#333333] p-8 md:p-10 flex flex-col justify-between shadow-[8px_8px_0px_#FFFFFF] hover:shadow-[12px_12px_0px_#FFFFFF] hover:-translate-y-1 transition-all duration-300 group h-full">
+            <div className="service-card bg-[#141414] border-2 border-[#333333] p-5 sm:p-8 md:p-10 flex flex-col justify-between shadow-[4px_4px_0px_#FFFFFF] md:shadow-[6px_6px_0px_#FFFFFF] hover:shadow-[6px_6px_0px_#FFFFFF] md:hover:shadow-[12px_12px_0px_#FFFFFF] hover:-translate-y-1 transition-all duration-300 group h-full">
               <div>
                 <div className="w-14 h-14 bg-[#222222] border border-[#444444] flex items-center justify-center mb-6">
                   <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
@@ -77,7 +77,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenConsulta
 
           {/* Service 2: Automatización */}
           <ScrollReveal direction="up" delay={0.2}>
-            <div className="service-card bg-[#141414] border-2 border-[#333333] p-8 md:p-10 flex flex-col justify-between shadow-[8px_8px_0px_#FFFFFF] hover:shadow-[12px_12px_0px_#FFFFFF] hover:-translate-y-1 transition-all duration-300 group h-full">
+            <div className="service-card bg-[#141414] border-2 border-[#333333] p-5 sm:p-8 md:p-10 flex flex-col justify-between shadow-[4px_4px_0px_#FFFFFF] md:shadow-[6px_6px_0px_#FFFFFF] hover:shadow-[6px_6px_0px_#FFFFFF] md:hover:shadow-[12px_12px_0px_#FFFFFF] hover:-translate-y-1 transition-all duration-300 group h-full">
               <div>
                 <div className="w-14 h-14 bg-[#222222] border border-[#444444] flex items-center justify-center mb-6">
                   <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
@@ -132,7 +132,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenConsulta
 
           {/* Service 3: Integración IA */}
           <ScrollReveal direction="up" delay={0.3}>
-            <div className="service-card bg-[#141414] border-2 border-[#333333] p-8 md:p-10 flex flex-col justify-between shadow-[8px_8px_0px_#FFFFFF] hover:shadow-[12px_12px_0px_#FFFFFF] hover:-translate-y-1 transition-all duration-300 group h-full">
+            <div className="service-card bg-[#141414] border-2 border-[#333333] p-5 sm:p-8 md:p-10 flex flex-col justify-between shadow-[4px_4px_0px_#FFFFFF] md:shadow-[6px_6px_0px_#FFFFFF] hover:shadow-[6px_6px_0px_#FFFFFF] md:hover:shadow-[12px_12px_0px_#FFFFFF] hover:-translate-y-1 transition-all duration-300 group h-full">
               <div>
                 <div className="w-14 h-14 bg-[#222222] border border-[#444444] flex items-center justify-center mb-6">
                   <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
@@ -189,7 +189,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenConsulta
 
         {/* Informative Callout Banner for Prototype vs Final Delivery */}
         <ScrollReveal direction="up" delay={0.35}>
-          <div className="mt-12 bg-[#141414] border-2 border-[#333333] p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 shadow-[8px_8px_0px_#FFFFFF]">
+          <div className="mt-12 bg-[#141414] border-2 border-[#333333] p-5 sm:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 shadow-[4px_4px_0px_#FFFFFF] md:shadow-[6px_6px_0px_#FFFFFF]">
             <div className="space-y-2 max-w-[850px]">
               <div className="flex items-center gap-2">
                 <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>

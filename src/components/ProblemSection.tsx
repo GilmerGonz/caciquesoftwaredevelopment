@@ -4,7 +4,7 @@ import { ScrollReveal } from './ScrollReveal';
 export const ProblemSection: React.FC = () => {
   return (
     <section id="problema" className="py-[clamp(60px,10vh,120px)] bg-[#F5F5F5] relative z-10 border-t border-[#1a1a1a]">
-      <div className="max-w-[1280px] mx-auto px-6 md:px-12">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-8 md:px-12">
         <ScrollReveal direction="up" delay={0.05}>
           <span className="font-body text-[11px] font-normal tracking-[0.2em] uppercase text-[#555555] block mb-4">
             EL PROBLEMA
@@ -14,9 +14,9 @@ export const ProblemSection: React.FC = () => {
           </h2>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12">
           <ScrollReveal direction="up" delay={0.1}>
-            <div className="card border border-[#1a1a1a] p-8 md:p-10 bg-[#FFFFFF] shadow-[6px_6px_0px_#0a0a0a] h-full flex flex-col justify-between">
+            <div className="card border border-[#1a1a1a] p-5 sm:p-8 md:p-10 bg-[#FFFFFF] shadow-[4px_4px_0px_#0a0a0a] md:shadow-[6px_6px_0px_#0a0a0a] h-full flex flex-col justify-between">
               <div>
                 <span className="font-headline text-[48px] font-black text-[#0a0a0a] block mb-2 leading-none">
                   01
@@ -35,7 +35,7 @@ export const ProblemSection: React.FC = () => {
           </ScrollReveal>
 
           <ScrollReveal direction="up" delay={0.2}>
-            <div className="card border border-[#1a1a1a] p-8 md:p-10 bg-[#FFFFFF] shadow-[6px_6px_0px_#0a0a0a] h-full flex flex-col justify-between">
+            <div className="card border border-[#1a1a1a] p-5 sm:p-8 md:p-10 bg-[#FFFFFF] shadow-[4px_4px_0px_#0a0a0a] md:shadow-[6px_6px_0px_#0a0a0a] h-full flex flex-col justify-between">
               <div>
                 <span className="font-headline text-[48px] font-black text-[#0a0a0a] block mb-2 leading-none">
                   02
@@ -54,7 +54,7 @@ export const ProblemSection: React.FC = () => {
           </ScrollReveal>
 
           <ScrollReveal direction="up" delay={0.3}>
-            <div className="card border border-[#1a1a1a] p-8 md:p-10 bg-[#FFFFFF] shadow-[6px_6px_0px_#0a0a0a] h-full flex flex-col justify-between">
+            <div className="card border border-[#1a1a1a] p-5 sm:p-8 md:p-10 bg-[#FFFFFF] shadow-[4px_4px_0px_#0a0a0a] md:shadow-[6px_6px_0px_#0a0a0a] h-full flex flex-col justify-between">
               <div>
                 <span className="font-headline text-[48px] font-black text-[#0a0a0a] block mb-2 leading-none">
                   03

@@ -13,6 +13,7 @@ import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 import { LeadModal } from './components/LeadModal';
 import { ProjectModal } from './components/ProjectModal';
+import { CookieBanner } from './components/CookieBanner';
 import { PortfolioProject } from './types';
 
 export default function App() {
@@ -71,6 +72,8 @@ export default function App() {
         onClose={handleCloseProject}
         onOpenConsultation={handleOpenConsultation}
       />
+
+      <CookieBanner />
     </div>
   );
 }
