@@ -62,7 +62,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenConsultation }) 
       <ThreeHeroCanvas />
 
       <div className="relative z-10 max-w-[1280px] mx-auto px-4 sm:px-8 md:px-12 w-full">
-        <span className="badge mb-6 inline-block bg-[#FFFFFF]">Agencia de Desarrollo — Latinoamérica</span>
+        <span className="badge mb-6 inline-block bg-[#FFFFFF]">Agencia de Desarrollo de Software — Latinoamérica</span>
 
         <h1
           ref={headlineRef}
@@ -79,7 +79,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenConsultation }) 
           ref={subtextRef}
           className="font-body font-normal text-[clamp(18px,2vw,24px)] leading-[1.4] text-[#1a1a1a] max-w-[650px] mb-8"
         >
-          Sistemas que venden. Automatización que ahorra. <strong>Prototipo de prueba en 3 días</strong> (versión final adaptada a tu complejidad).
+          Desarrollo de software a medida, landing pages de alta conversión y automatización de procesos con IA para empresas en Latinoamérica. <strong>Prototipo de prueba en 3 días</strong> (versión final adaptada a tu complejidad).
         </p>
 
         <div ref={ctasRef} className="flex flex-wrap gap-4 mb-10">
