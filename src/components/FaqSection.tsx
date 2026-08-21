@@ -16,8 +16,8 @@ const FAQS: FaqItem[] = [
     answer: 'Sí. Al finalizar el proyecto te entregamos el repositorio completo en GitHub, credenciales del servidor y documentación técnica. No cobramos mensualidades de licenciamiento ocultas.'
   },
   {
-    question: '¿Cómo funcionan las formas de pago en Venezuela?',
-    answer: 'Ofrecemos máxima flexibilidad local e internacional: Pago Móvil, Transferencias Bancarias en Bs., Zelle, Binance (USDT), Reserve y Transferencias SWIFT.'
+    question: '¿Cómo funcionan las formas de pago en Latinoamérica?',
+    answer: 'Ofrecemos máxima flexibilidad local e internacional: transferencias bancarias locales según tu país, Zelle, Binance (USDT), Reserve y transferencias SWIFT.'
   },
   {
     question: '¿Qué garantía incluye el servicio?',

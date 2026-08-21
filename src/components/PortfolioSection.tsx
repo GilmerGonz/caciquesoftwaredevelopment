@@ -21,11 +21,14 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({ onSelectProj
       <div className="max-w-[1280px] mx-auto px-4 sm:px-8 md:px-12">
         <ScrollReveal direction="up" delay={0.05}>
           <span className="font-body text-[11px] font-normal tracking-[0.2em] uppercase text-[#555555] block mb-4">
-            CLIENTES QUE YA CONFIARON
+            PRUÉBALO TÚ MISMO
           </span>
-          <h2 className="font-headline font-bold text-[clamp(36px,6vw,72px)] leading-[0.95] tracking-[-0.01em] uppercase text-[#0a0a0a] mb-8">
-            LANDINGS QUE GENERAN RESULTADOS REALES
+          <h2 className="font-headline font-bold text-[clamp(36px,6vw,72px)] leading-[0.95] tracking-[-0.01em] uppercase text-[#0a0a0a] mb-4">
+            ESTO ES LO QUE PODEMOS CONSTRUIR PARA TI
           </h2>
+          <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.6] text-[#555555] max-w-[720px] mb-8">
+            Demos interactivas creadas por nuestro equipo para mostrar calidad de ejecución y proceso de trabajo. Son conceptos ilustrativos, no clientes reales — interactúa con ellos y luego construyamos el tuyo.
+          </p>
         </ScrollReveal>
 
         {/* Category Filters */}
@@ -91,7 +94,12 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({ onSelectProj
                   <span className="font-body text-[13px] text-[#555555] block mt-1 mb-2">
                     {project.clientCategory}
                   </span>
-                  <span className="badge inline-block mb-3">{project.badge}</span>
+                  <div className="flex items-center gap-2 mb-3 flex-wrap">
+                    <span className="badge inline-block">{project.badge}</span>
+                    <span className="inline-block px-2.5 py-1 border border-[#555555] text-[10px] font-bold uppercase tracking-widest text-[#555555]">
+                      Concepto
+                    </span>
+                  </div>
                   <p className="font-body font-light text-[15px] leading-[1.5] text-[#555555] m-0">
                     {project.description}
                   </p>
@@ -99,7 +107,7 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({ onSelectProj
 
                 <div className="pt-4 mt-4 border-t border-[#1a1a1a]/20 flex justify-between items-center">
                   <span className="font-body text-[12px] font-normal tracking-[0.15em] uppercase text-[#0a0a0a]">
-                    VER CASO DE ESTUDIO
+                    VER DEMO INTERACTIVA
                   </span>
                   <span className="font-headline font-bold text-lg text-[#0a0a0a] group-hover:translate-x-1 transition-transform">
                     →

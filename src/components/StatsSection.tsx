@@ -79,20 +79,19 @@ export const StatsSection: React.FC = () => {
             {/* Stat 3 */}
             <div className="text-center md:col-span-1 px-4">
               <div className="flex items-center justify-center">
-                <span className="font-headline text-[clamp(48px,6vw,72px)] font-black text-[#0a0a0a] inline-block leading-none">+</span>
                 <span
                   className="stat-number font-headline text-[clamp(48px,6vw,72px)] font-black text-[#0a0a0a] inline-block leading-none"
-                  data-target="200"
+                  data-target="24"
                 >
                   0
                 </span>
-                <span className="font-headline text-[clamp(48px,6vw,72px)] font-black text-[#0a0a0a] inline-block leading-none">%</span>
+                <span className="font-headline text-[clamp(48px,6vw,72px)] font-black text-[#0a0a0a] inline-block leading-none">H</span>
               </div>
               <span className="font-body text-[14px] font-bold tracking-[0.2em] uppercase text-[#0a0a0a] block mt-2">
-                AUMENTO EN LEADS
+                TIEMPO DE RESPUESTA
               </span>
               <span className="font-body font-light text-[13px] text-[#555555] block mt-1">
-                Impacto en conversión verificado
+                Contacto directo garantizado
               </span>
             </div>
           </div>

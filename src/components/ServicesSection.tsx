@@ -203,6 +203,9 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenConsulta
               <p className="font-body text-[14px] leading-[1.6] text-[#cccccc] m-0">
                 Construimos un <strong>prototipo de prueba totalmente interactivo en solo 3 días</strong> para que evalúes la experiencia real. La <strong>versión final completa</strong> se perfecciona posteriormente y tomará tiempo adicional según el grado de complejidad técnica y sistemas a integrar.
               </p>
+              <p className="font-body text-[13px] leading-[1.6] text-[#888888] m-0 mt-2">
+                Cotización a la medida de tu proyecto — la evaluamos juntos en tu primera consulta, sin costo ni compromiso.
+              </p>
             </div>
 
             <button

@@ -154,11 +154,11 @@ export const TechTickerSection: React.FC = () => {
         <div className="flex items-center gap-2">
           <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
           <span className="font-body text-[11px] font-bold tracking-[0.2em] uppercase text-[#0a0a0a]">
-            ECOSISTEMA TECNOLÓGICO Y SOCIOS CLOUD
+            TECNOLOGÍAS CON LAS QUE TRABAJAMOS
           </span>
         </div>
         <span className="font-body text-[11px] font-semibold text-[#555555] uppercase tracking-wider">
-          Infraestructura de Clase Mundial integrada en cada desarrollo
+          Stack técnico que integramos en cada desarrollo
         </span>
       </div>
 

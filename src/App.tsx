@@ -14,11 +14,22 @@ import { Footer } from './components/Footer';
 import { LeadModal } from './components/LeadModal';
 import { ProjectModal } from './components/ProjectModal';
 import { CookieBanner } from './components/CookieBanner';
+import { PrivacyPolicyPage } from './components/PrivacyPolicyPage';
+import { TermsPage } from './components/TermsPage';
 import { PortfolioProject } from './types';
 
 export default function App() {
   const [isConsultationOpen, setIsConsultationOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState<PortfolioProject | null>(null);
+  const pathname = window.location.pathname;
+
+  if (pathname === '/privacidad') {
+    return <PrivacyPolicyPage />;
+  }
+
+  if (pathname === '/terminos') {
+    return <TermsPage />;
+  }
 
   const handleOpenConsultation = () => {
     setIsConsultationOpen(true);

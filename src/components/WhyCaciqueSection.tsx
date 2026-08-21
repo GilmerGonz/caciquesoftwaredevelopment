@@ -39,7 +39,7 @@ export const WhyCaciqueSection: React.FC = () => {
           POR QUE CACIQUE
         </span>
         <h2 className="font-headline font-bold text-[clamp(36px,6vw,72px)] leading-[0.95] tracking-[-0.01em] uppercase text-[#FFFFFF] mb-12">
-          LA AUTORIDAD EN TECNOLOGIA PARA VENEZUELA
+          LA AUTORIDAD EN TECNOLOGÍA PARA LATINOAMÉRICA
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-12">
@@ -81,10 +81,10 @@ export const WhyCaciqueSection: React.FC = () => {
 
           <div className="diff-item border border-[#555555] p-5 sm:p-8 bg-[#1a1a1a] shadow-[4px_4px_0px_#F5F5F5] md:shadow-[6px_6px_0px_#F5F5F5]">
             <span className="font-body text-[18px] font-bold tracking-[0.15em] uppercase text-[#FFFFFF] block mb-3">
-              HECHOS EN VENEZUELA
+              HECHOS PARA LATINOAMÉRICA
             </span>
             <p className="font-body font-normal text-[15px] leading-[1.6] text-[#aaaaaa] m-0">
-              Entendemos la realidad comercial local, los métodos de pago nacionales y el comportamiento de tu cliente.
+              Entendemos la realidad comercial de la región, los métodos de pago locales de cada país y el comportamiento de tu cliente.
             </p>
           </div>
 

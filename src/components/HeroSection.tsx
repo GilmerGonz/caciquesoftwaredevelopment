@@ -62,7 +62,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenConsultation }) 
       <ThreeHeroCanvas />
 
       <div className="relative z-10 max-w-[1280px] mx-auto px-4 sm:px-8 md:px-12 w-full">
-        <span className="badge mb-6 inline-block bg-[#FFFFFF]">Agencia de Desarrollo — Venezuela</span>
+        <span className="badge mb-6 inline-block bg-[#FFFFFF]">Agencia de Desarrollo — Latinoamérica</span>
 
         <h1
           ref={headlineRef}
@@ -96,6 +96,14 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenConsultation }) 
             Contáctanos
           </button>
         </div>
+
+        <a
+          href="#portafolio"
+          onClick={handleScrollToPortfolio}
+          className="font-body text-[13px] font-bold uppercase tracking-[0.15em] text-[#0a0a0a] underline underline-offset-4 decoration-1 hover:opacity-70 transition-opacity mb-10 inline-block"
+        >
+          O prueba nuestras demos interactivas primero →
+        </a>
 
         {/* Tech Stack & Trust Indicators */}
         <div className="pt-6 border-t border-[#0a0a0a]/20 max-w-[800px]">

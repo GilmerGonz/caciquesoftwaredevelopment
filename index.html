@@ -3,55 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CACIQUE SOFTWARE DEVELOPMENT — Agencia de Desarrollo en Venezuela</title>
-    <script>
-      (function() {
-        // Intercept and swallow benign fetch assignment errors from third-party polyfills
-        window.addEventListener('error', function(e) {
-          var msg = (e && (e.message || (e.error && e.error.message))) || '';
-          if (typeof msg === 'string' && msg.indexOf('fetch') !== -1) {
-            if (e.preventDefault) e.preventDefault();
-            return true;
-          }
-        }, true);
+    <title>Cacique Software Development — Agencia de Desarrollo B2B en Latinoamérica</title>
+    <meta name="description" content="Agencia de desarrollo de software B2B en Latinoamérica. Landing pages, automatización y agentes de IA con prototipo funcional en 3 días. Código 100% tuyo, sin licenciamiento." />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <meta name="google-site-verification" content="cPJtD_1Ecq2j7c_ESwxyGxg54T55OAMIyQXPNaeSKAY" />
+    <link rel="canonical" href="https://caciquesoftwaredev.agency/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-        try {
-          var _fetch = window.fetch;
-          var makeProp = function() {
-            return {
-              get: function() { return _fetch; },
-              set: function(v) { _fetch = v; },
-              configurable: true,
-              enumerable: true
-            };
-          };
+    <!-- Open Graph / LinkedIn / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_419" />
+    <meta property="og:site_name" content="Cacique Software Development" />
+    <meta property="og:title" content="Cacique Software Development — Agencia de Desarrollo B2B en Latinoamérica" />
+    <meta property="og:description" content="Sistemas que venden. Automatización que ahorra. Prototipo funcional en 3 días, versión final adaptada a tu complejidad." />
+    <meta property="og:url" content="https://caciquesoftwaredev.agency/" />
 
-          var targets = [
-            window,
-            typeof globalThis !== 'undefined' ? globalThis : null,
-            typeof self !== 'undefined' ? self : null,
-            window.Window ? window.Window.prototype : null
-          ];
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Cacique Software Development — Agencia de Desarrollo B2B en Latinoamérica" />
+    <meta name="twitter:description" content="Sistemas que venden. Automatización que ahorra. Prototipo funcional en 3 días, versión final adaptada a tu complejidad." />
 
-          for (var i = 0; i < targets.length; i++) {
-            var t = targets[i];
-            if (t) {
-              try {
-                Object.defineProperty(t, 'fetch', makeProp());
-              } catch (e) {}
-            }
-          }
-        } catch (err) {}
-      })();
-    </script>
     <!-- Google Fonts: Barlow Condensed & Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Cacique Software Development",
+      "description": "Agencia de desarrollo de software B2B en Latinoamérica: landing pages, automatización e integración de IA.",
+      "url": "https://caciquesoftwaredev.agency/",
+      "email": "dejesusgonzalezalvarez@gmail.com",
+      "areaServed": ["VE", "CO", "MX", "AR", "CL", "PE", "EC", "PA", "DO"],
+      "openingHours": "Mo-Sa 08:00-19:00"
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
-

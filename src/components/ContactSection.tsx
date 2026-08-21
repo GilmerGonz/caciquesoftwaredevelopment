@@ -67,23 +67,23 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenConsultati
                 </p>
               </div>
               <a
-                href="mailto:contacto@cacique.dev"
+                href="mailto:dejesusgonzalezalvarez@gmail.com"
                 className="text-[13px] font-bold text-[#0a0a0a] bg-[#F5F5F5] px-2.5 py-1 border border-[#0a0a0a]/20 self-start hover:bg-[#e8e8e8] hover:border-[#0a0a0a] transition-colors inline-flex items-center gap-1.5 mt-2"
               >
-                <span>contacto@cacique.dev</span>
+                <span>dejesusgonzalezalvarez@gmail.com</span>
               </a>
             </div>
 
             <div className="p-5 sm:p-6 bg-[#FFFFFF] border border-[#0a0a0a] shadow-[4px_4px_0px_#0a0a0a] md:shadow-[6px_6px_0px_#0a0a0a] flex flex-col justify-between h-full">
               <div>
                 <span className="font-body text-[11px] font-bold tracking-[0.2em] uppercase text-[#555555] block mb-2">
-                  OFICINA & COBERTURA
+                  COBERTURA
                 </span>
                 <h4 className="font-headline text-[18px] font-bold uppercase text-[#0a0a0a] mb-2 m-0">
-                  Caracas & Remoto
+                  100% Remoto
                 </h4>
                 <p className="font-body text-[14px] text-[#333333] m-0 mb-4 leading-relaxed">
-                  Atención presencial en Caracas y servicio a nivel nacional e internacional.
+                  Trabajamos de forma remota para clientes en cualquier parte del mundo.
                 </p>
               </div>
               <div className="text-[13px] font-bold text-[#0a0a0a] inline-flex items-center gap-1.5 mt-2 bg-[#F5F5F5] px-2.5 py-1 border border-[#0a0a0a]/20 self-start">

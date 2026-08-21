@@ -46,7 +46,12 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
           ✕
         </button>
 
-        <span className="badge mb-3 inline-block">{project.badge}</span>
+        <div className="flex items-center gap-2 mb-3 flex-wrap">
+          <span className="badge inline-block">{project.badge}</span>
+          <span className="inline-block px-2.5 py-1 border border-[#555555] text-[10px] font-bold uppercase tracking-widest text-[#555555]">
+            Concepto de demostración
+          </span>
+        </div>
         <h3 id="modal-title" className="font-headline font-black text-[clamp(32px,5vw,56px)] uppercase text-[#0a0a0a] leading-none mb-1">
           {project.name}
         </h3>
@@ -60,7 +65,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
         {/* Metric Highlight */}
         <div className="bg-[#0a0a0a] text-[#F5F5F5] p-6 mb-8 border border-[#1a1a1a] shadow-[6px_6px_0px_#1a1a1a]">
           <span className="font-body text-[11px] uppercase tracking-[0.2em] text-[#aaaaaa] block mb-1">
-            RESULTADO CLAVE
+            OBJETIVO DE DISEÑO
           </span>
           <span className="font-headline text-3xl md:text-4xl font-bold uppercase text-[#FFFFFF] block">
             {project.metric}
@@ -113,7 +118,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
             }}
             className="btn-primary w-full sm:w-auto flex-1 text-center"
           >
-            QUIERO RESULTADOS SIMILARES
+            QUIERO ALGO ASÍ PARA MI NEGOCIO
           </button>
           <button
             onClick={onClose}

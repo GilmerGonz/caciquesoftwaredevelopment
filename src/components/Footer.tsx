@@ -13,8 +13,23 @@ export const Footer: React.FC = () => {
           </span>
         </div>
 
+        <div className="flex items-center gap-4">
+          <a
+            href="/privacidad"
+            className="font-body font-normal text-xs text-[#aaaaaa] hover:text-[#FFFFFF] transition-colors underline underline-offset-2"
+          >
+            Política de Privacidad
+          </a>
+          <a
+            href="/terminos"
+            className="font-body font-normal text-xs text-[#aaaaaa] hover:text-[#FFFFFF] transition-colors underline underline-offset-2"
+          >
+            Términos y Condiciones
+          </a>
+        </div>
+
         <span className="font-body font-light text-sm text-[#555555] text-center md:text-right">
-          2025 Cacique Software Development. Venezuela.
+          2025 Cacique Software Development. Latinoamérica.
         </span>
       </div>
     </footer>
