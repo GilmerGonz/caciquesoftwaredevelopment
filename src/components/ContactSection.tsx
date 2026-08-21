@@ -68,9 +68,9 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenConsultati
               </div>
               <a
                 href="mailto:dejesusgonzalezalvarez@gmail.com"
-                className="text-[13px] font-bold text-[#0a0a0a] bg-[#F5F5F5] px-2.5 py-1 border border-[#0a0a0a]/20 self-start hover:bg-[#e8e8e8] hover:border-[#0a0a0a] transition-colors inline-flex items-center gap-1.5 mt-2"
+                className="text-[13px] font-bold text-[#0a0a0a] bg-[#F5F5F5] px-2.5 py-1.5 border border-[#0a0a0a]/20 self-start hover:bg-[#e8e8e8] hover:border-[#0a0a0a] transition-colors inline-block max-w-full break-all mt-2"
               >
-                <span>dejesusgonzalezalvarez@gmail.com</span>
+                dejesusgonzalezalvarez@gmail.com
               </a>
             </div>
 
