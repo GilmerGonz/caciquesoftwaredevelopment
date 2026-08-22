@@ -47,33 +47,45 @@ export const TermsPage: React.FC = () => {
         seguridad, ni a extraer masivamente su contenido sin autorización.
       </p>
 
-      <h2>6. Limitación de responsabilidad</h2>
+      <h2>6. Servicios de terceros</h2>
+      <p>
+        Este sitio enlaza y depende de servicios de terceros —principalmente WhatsApp (wa.me) y
+        clientes de correo electrónico— para que puedas contactarnos. El uso de WhatsApp para
+        escribirnos está además sujeto a los términos de servicio propios de WhatsApp/Meta. No
+        somos responsables de la disponibilidad, contenido o políticas de esos servicios externos.
+      </p>
+
+      <h2>7. Limitación de responsabilidad</h2>
       <p>
         Este sitio se ofrece "tal cual". No garantizamos que esté libre de errores en todo momento.
         Cacique no será responsable por daños indirectos derivados del uso del sitio, más allá de
         lo que exija la ley aplicable.
       </p>
 
-      <h2>7. Enlaces externos</h2>
+      <h2>8. Independencia de las cláusulas</h2>
       <p>
-        El sitio puede enlazar a servicios de terceros (WhatsApp, correo electrónico). No somos
-        responsables de las políticas o el contenido de esos servicios externos.
+        Si alguna cláusula de estos Términos se considerara inválida o inaplicable, el resto de los
+        Términos seguirá vigente. Estos Términos, junto con la Política de Privacidad, constituyen
+        el acuerdo completo entre tú y Cacique respecto al uso de este sitio.
       </p>
 
-      <h2>8. Ley aplicable</h2>
+      <h2>9. Ley aplicable y resolución de controversias</h2>
       <p>
         Estos términos se rigen por las leyes de la República Bolivariana de Venezuela, sin
         perjuicio de las normas de protección al consumidor que puedan aplicar según tu país de
-        residencia si contratas nuestros servicios desde el extranjero.
+        residencia si contratas nuestros servicios desde el extranjero. Cualquier controversia
+        relacionada con el uso de este sitio (no de un contrato de servicios específico, que tendría
+        sus propios términos) se someterá a los tribunales competentes de Venezuela, salvo que la
+        ley imperativa de tu país de residencia disponga otra cosa.
       </p>
 
-      <h2>9. Modificaciones</h2>
+      <h2>10. Modificaciones</h2>
       <p>
         Podemos actualizar estos Términos y Condiciones en cualquier momento. La fecha de "última
         actualización" al inicio de esta página refleja la versión vigente.
       </p>
 
-      <h2>10. Contacto</h2>
+      <h2>11. Contacto</h2>
       <p>
         Para cualquier duda sobre estos Términos, escríbenos a{' '}
         <a href="mailto:dejesusgonzalezalvarez@gmail.com">dejesusgonzalezalvarez@gmail.com</a>.
