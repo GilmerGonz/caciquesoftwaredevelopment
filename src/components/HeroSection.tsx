@@ -1,6 +1,12 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, Suspense, lazy } from 'react';
 import gsap from 'gsap';
-import { ThreeHeroCanvas } from './ThreeHeroCanvas';
+
+// Three.js es la dependencia más pesada del bundle y esta escena es puramente
+// decorativa (aria-hidden, pointer-events-none), así que se carga en un chunk
+// aparte en vez de bloquear el JS principal del sitio.
+const ThreeHeroCanvas = lazy(() =>
+  import('./ThreeHeroCanvas').then((m) => ({ default: m.ThreeHeroCanvas }))
+);
 
 interface HeroSectionProps {
   onOpenConsultation: () => void;
@@ -59,7 +65,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenConsultation }) 
   return (
     <section id="hero" className="relative min-h-[100vh] min-h-[700px] flex items-center bg-[#F5F5F5] overflow-hidden pt-24 pb-16" aria-label="Hero principal">
       {/* 3D Wireframe Scene - Bound to Hero section */}
-      <ThreeHeroCanvas />
+      <Suspense fallback={null}>
+        <ThreeHeroCanvas />
+      </Suspense>
 
       <div className="relative z-10 max-w-[1280px] mx-auto px-4 sm:px-8 md:px-12 w-full">
         <span className="badge mb-6 inline-block bg-[#FFFFFF]">Agencia de Desarrollo de Software — Latinoamérica</span>
