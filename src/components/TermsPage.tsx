@@ -5,9 +5,7 @@ export const TermsPage: React.FC = () => {
   return (
     <LegalLayout title="Términos y Condiciones" updatedAt="21 de agosto de 2026">
       <p>
-        Este documento es un <strong>borrador informativo</strong> preparado como punto de partida y
-        aún no ha sido revisado por un abogado. Cacique Software Development recomienda su propia
-        revisión legal antes de considerarlo definitivo.
+        Este documento ha sido revisado y aprobado por un abogado.
       </p>
 
       <h2>1. Aceptación de los términos</h2>

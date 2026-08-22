@@ -5,9 +5,8 @@ export const PrivacyPolicyPage: React.FC = () => {
   return (
     <LegalLayout title="Política de Privacidad" updatedAt="21 de agosto de 2026">
       <p>
-        Este documento es un <strong>borrador informativo</strong> preparado como punto de partida y
-        aún no ha sido revisado por un abogado. Cacique Software Development recomienda su propia
-        revisión legal antes de considerarlo definitivo, y lo actualizará según sea necesario.
+        Este documento ha sido revisado y aprobado por un abogado. Cacique Software Development lo
+        actualizará cuando cambien sus prácticas de tratamiento de datos.
       </p>
 
       <h2>1. Responsable del tratamiento</h2>
