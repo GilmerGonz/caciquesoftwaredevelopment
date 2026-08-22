@@ -29,7 +29,7 @@ export const Footer: React.FC = () => {
         </div>
 
         <span className="font-body font-light text-sm text-[#555555] text-center md:text-right">
-          2025 Cacique Software Development. Latinoamérica.
+          2026 Cacique Software Development. Latinoamérica.
         </span>
       </div>
     </footer>
