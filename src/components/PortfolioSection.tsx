@@ -18,7 +18,7 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({ onSelectProj
 
   return (
     <section id="portafolio" className="py-[clamp(60px,10vh,120px)] bg-[#F5F5F5] relative z-10 border-t border-[#1a1a1a]">
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-8 md:px-12">
+      <div className="max-w-[1600px] mx-auto px-4 sm:px-8 md:px-12">
         <ScrollReveal direction="up" delay={0.05}>
           <span className="font-body text-[11px] font-normal tracking-[0.2em] uppercase text-[#555555] block mb-4">
             PRUÉBALO TÚ MISMO

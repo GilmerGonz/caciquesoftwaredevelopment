@@ -140,8 +140,8 @@ export const ThreeHeroCanvas: React.FC = () => {
         modelGroup.position.set(2.2, -0.2, 0);
         modelGroup.scale.set(0.65, 0.65, 0.65);
       } else {
-        // Desktop: Clean right-side positioning
-        modelGroup.position.set(3.4, 0, 0);
+        // Desktop: pushed further right so it doesn't overlap the (narrower) text column
+        modelGroup.position.set(5.6, 0, 0);
         modelGroup.scale.set(0.85, 0.85, 0.85);
       }
     };

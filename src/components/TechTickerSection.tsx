@@ -150,7 +150,7 @@ const LOOPED_BRANDS = [...TECH_BRANDS, ...TECH_BRANDS];
 export const TechTickerSection: React.FC = () => {
   return (
     <section className="bg-[#FFFFFF] border-y-2 border-[#0a0a0a] py-5 relative z-20 overflow-hidden shadow-[0_4px_12px_rgba(0,0,0,0.03)]">
-      <div className="max-w-[1280px] mx-auto px-6 mb-3 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-2">
+      <div className="max-w-[1600px] mx-auto px-6 mb-3 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-2">
         <div className="flex items-center gap-2">
           <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
           <span className="font-body text-[11px] font-bold tracking-[0.2em] uppercase text-[#0a0a0a]">

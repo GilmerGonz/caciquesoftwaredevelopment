@@ -8,7 +8,7 @@ interface ServicesSectionProps {
 export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenConsultation }) => {
   return (
     <section id="servicios" className="py-[clamp(60px,10vh,120px)] bg-[#0a0a0a] text-[#F5F5F5] relative z-10">
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-8 md:px-12">
+      <div className="max-w-[1600px] mx-auto px-4 sm:px-8 md:px-12">
         <ScrollReveal direction="up" delay={0.05}>
           <span className="font-body text-[11px] font-bold tracking-[0.2em] uppercase text-[#aaaaaa] block mb-4">
             LO QUE CONSTRUIMOS

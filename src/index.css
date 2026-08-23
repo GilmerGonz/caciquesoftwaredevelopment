@@ -17,6 +17,15 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Todo el sitio se ve ~20% más compacto en pantallas de escritorio, como si
+   cargara con el navegador a un 80% de zoom. Se deja fuera de mobile para no
+   reducir el tamaño de los targets táctiles. */
+@media (min-width: 768px) {
+  html {
+    zoom: 0.8;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;

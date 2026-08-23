@@ -30,7 +30,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConsultation }) => {
       role="navigation"
       aria-label="Navegación principal"
     >
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-8 md:px-12 flex justify-between items-center">
+      <div className="max-w-[1600px] mx-auto px-4 sm:px-8 md:px-12 flex justify-between items-center">
         <div className="flex flex-col leading-none">
           <a
             href="#hero"

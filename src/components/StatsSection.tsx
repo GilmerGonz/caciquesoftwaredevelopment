@@ -34,7 +34,7 @@ export const StatsSection: React.FC = () => {
 
   return (
     <section id="stats" ref={sectionRef} className="py-[clamp(50px,8vh,90px)] bg-[#F5F5F5] border-t border-b border-[#1a1a1a] relative z-10">
-      <div className="max-w-[1280px] mx-auto px-6 md:px-12">
+      <div className="max-w-[1600px] mx-auto px-6 md:px-12">
         <ScrollReveal direction="up">
           <div className="grid grid-cols-1 md:grid-cols-5 items-center gap-8 md:gap-0">
             {/* Stat 1 */}

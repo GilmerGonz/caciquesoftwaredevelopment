@@ -42,7 +42,7 @@ export const FaqSection: React.FC = () => {
 
   return (
     <section id="faq" className="py-[clamp(60px,10vh,120px)] bg-[#F5F5F5] relative z-10 border-t border-[#0a0a0a]">
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-8 md:px-12">
+      <div className="max-w-[1600px] mx-auto px-4 sm:px-8 md:px-12">
         <ScrollReveal direction="up" delay={0.05} className="text-center flex flex-col items-center">
           <span className="badge mb-4 inline-block bg-[#FFFFFF]">
             RESPUESTAS CLARAS

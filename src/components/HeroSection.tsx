@@ -69,12 +69,28 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenConsultation }) 
         <ThreeHeroCanvas />
       </Suspense>
 
-      <div className="relative z-10 max-w-[1280px] mx-auto px-4 sm:px-8 md:px-12 w-full">
+      {/* Degradado radial detrás del texto. Cubre solo la mitad izquierda de
+          la sección (no toda, para no difuminar el objeto 3D que vive a la
+          derecha). El color de fondo ya se desvanece con el radial-gradient,
+          pero backdrop-blur en sí NO se puede degradar con CSS puro: aplica
+          el mismo blur en toda su caja y corta en seco en el borde. Por eso
+          además se enmascara el elemento entero (mask-image) para que el
+          blur también se desvanezca de forma continua, sin línea dura. */}
+      <div
+        aria-hidden="true"
+        className="hidden lg:block absolute inset-y-0 left-0 w-[56%] z-[5] pointer-events-none bg-[radial-gradient(ellipse_75%_75%_at_35%_55%,#F5F5F5_0%,#F5F5F5_30%,rgba(245,245,245,0.5)_55%,rgba(245,245,245,0)_95%)] backdrop-blur-[6px]"
+        style={{
+          WebkitMaskImage: 'radial-gradient(ellipse 75% 75% at 35% 55%, black 0%, black 30%, rgba(0,0,0,0.5) 55%, transparent 95%)',
+          maskImage: 'radial-gradient(ellipse 75% 75% at 35% 55%, black 0%, black 30%, rgba(0,0,0,0.5) 55%, transparent 95%)',
+        }}
+      />
+
+      <div className="relative z-10 max-w-[1600px] mx-auto px-4 sm:px-8 md:px-12 xl:px-20 w-full">
         <span className="badge mb-6 inline-block bg-[#FFFFFF]">Agencia de Desarrollo de Software — Latinoamérica</span>
 
         <h1
           ref={headlineRef}
-          className="font-headline font-black text-[clamp(48px,10vw,110px)] leading-[0.92] tracking-[-0.02em] uppercase text-[#0a0a0a] my-4 max-w-full lg:max-w-[65%] flex flex-wrap gap-x-4 gap-y-1"
+          className="font-headline font-black text-[clamp(48px,10vw,110px)] leading-[0.92] tracking-[-0.02em] uppercase text-[#0a0a0a] my-4 max-w-full lg:max-w-[52%] flex flex-wrap gap-x-4 gap-y-1"
         >
           {headlineWords.map((word, index) => (
             <span key={index} className="hero-word inline-block">
@@ -105,24 +121,28 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenConsultation }) 
           </button>
         </div>
 
-        <a
-          href="#portafolio"
-          onClick={handleScrollToPortfolio}
-          className="font-body text-[13px] font-bold uppercase tracking-[0.15em] text-[#0a0a0a] underline underline-offset-4 decoration-1 hover:opacity-70 transition-opacity mb-10 inline-block"
-        >
-          O prueba nuestras demos interactivas primero →
-        </a>
+        {/* En mobile/tablet el fondo 3D pasa por detrás de este bloque; un panel
+            translúcido con blur evita que la rejilla se mezcle con el texto.
+            En desktop lo cubre el degradado a nivel de sección (ver arriba). */}
+        <div className="bg-[#F5F5F5]/85 backdrop-blur-md -mx-4 sm:-mx-8 px-4 sm:px-8 py-4 rounded lg:bg-transparent lg:backdrop-blur-none lg:mx-0 lg:px-0 lg:py-0 lg:rounded-none">
+          <a
+            href="#portafolio"
+            onClick={handleScrollToPortfolio}
+            className="font-body text-[13px] font-bold uppercase tracking-[0.15em] text-[#0a0a0a] underline underline-offset-4 decoration-1 hover:opacity-70 transition-opacity mb-10 inline-block"
+          >
+            O prueba nuestras demos interactivas primero →
+          </a>
 
-        {/* Tech Stack & Trust Indicators */}
-        <div className="pt-6 border-t border-[#0a0a0a]/20 max-w-[800px]">
-          <span className="font-body text-[11px] font-bold tracking-[0.2em] uppercase text-[#0a0a0a] block mb-3">
-            TECNOLOGÍAS Y ESTÁNDARES QUE UTILIZAMOS
-          </span>
-          <div className="flex flex-wrap items-center gap-2 mb-6">
-            {['React 18', 'TypeScript', 'Next.js', 'Python', 'Node.js', 'Gemini AI', 'AWS', 'Docker', 'PostgreSQL'].map((tech) => (
-              <span
-                key={tech}
-                className="px-3 py-1 bg-[#FFFFFF] border border-[#0a0a0a] text-[12px] font-bold text-[#0a0a0a] uppercase tracking-wider shadow-[2px_2px_0px_#0a0a0a]"
+          {/* Tech Stack & Trust Indicators */}
+          <div className="pt-6 border-t border-[#0a0a0a]/20 max-w-[800px]">
+            <span className="font-body text-[11px] font-bold tracking-[0.2em] uppercase text-[#0a0a0a] block mb-3">
+              TECNOLOGÍAS Y ESTÁNDARES QUE UTILIZAMOS
+            </span>
+            <div className="flex flex-wrap items-center gap-2 mb-6">
+              {['React 18', 'TypeScript', 'Next.js', 'Python', 'Node.js', 'Gemini AI', 'AWS', 'Docker', 'PostgreSQL'].map((tech) => (
+                <span
+                  key={tech}
+                  className="px-3 py-1 bg-[#FFFFFF] border border-[#0a0a0a] text-[12px] font-bold text-[#0a0a0a] uppercase tracking-wider shadow-[2px_2px_0px_#0a0a0a]"
               >
                 {tech}
               </span>
@@ -141,6 +161,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenConsultation }) 
               <span>✓ Prototipo Funcional en 3 Días</span>
             </div>
           </div>
+        </div>
         </div>
 
         <hr className="section-divider mb-12" />

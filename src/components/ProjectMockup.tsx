@@ -1,11 +1,11 @@
 import React from 'react';
 
-import vittaImg from '../assets/images/vitta_mockup_1786468126754.jpg';
-import logisticaImg from '../assets/images/logistica_express_mockup_1786468143373.jpg';
-import educaImg from '../assets/images/educa_venezuela_mockup_1786468157135.jpg';
-import tecnoImg from '../assets/images/tecno_build_mockup_1786468176479.jpg';
-import bancoImg from '../assets/images/banco_nuevo_mockup_1786468192416.jpg';
-import saborImg from '../assets/images/sabor_caribe_mockup_1786468212748.jpg';
+import vittaImg from '../assets/images/vitta_mockup_1786468126754.webp';
+import logisticaImg from '../assets/images/logistica_express_mockup_1786468143373.webp';
+import educaImg from '../assets/images/educa_venezuela_mockup_1786468157135.webp';
+import tecnoImg from '../assets/images/tecno_build_mockup_1786468176479.webp';
+import bancoImg from '../assets/images/banco_nuevo_mockup_1786468192416.webp';
+import saborImg from '../assets/images/sabor_caribe_mockup_1786468212748.webp';
 
 interface ProjectMockupProps {
   projectId: string;
@@ -63,6 +63,8 @@ export const ProjectMockup: React.FC<ProjectMockupProps> = ({
         alt={imageInfo.alt}
         className={`w-full h-full object-cover ${hoverEffect}`}
         referrerPolicy="no-referrer"
+        loading="lazy"
+        decoding="async"
       />
     </div>
   );
