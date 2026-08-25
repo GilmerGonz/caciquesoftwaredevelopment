@@ -20,15 +20,30 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({ onSelectProj
     <section id="portafolio" className="py-[clamp(60px,10vh,120px)] bg-[#F5F5F5] relative z-10 border-t border-[#1a1a1a]">
       <div className="max-w-[1600px] mx-auto px-4 sm:px-8 md:px-12">
         <ScrollReveal direction="up" delay={0.05}>
-          <span className="font-body text-[11px] font-normal tracking-[0.2em] uppercase text-[#555555] block mb-4">
-            PRUÉBALO TÚ MISMO
-          </span>
-          <h2 className="font-headline font-bold text-[clamp(36px,6vw,72px)] leading-[0.95] tracking-[-0.01em] uppercase text-[#0a0a0a] mb-4">
-            ESTO ES LO QUE PODEMOS CONSTRUIR PARA TI
-          </h2>
-          <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.6] text-[#555555] max-w-[720px] mb-8">
-            Demos interactivas creadas por nuestro equipo para mostrar calidad de ejecución y proceso de trabajo. Son conceptos ilustrativos, no clientes reales — interactúa con ellos y luego construyamos el tuyo.
-          </p>
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+            <div>
+              <span className="font-body text-[11px] font-normal tracking-[0.2em] uppercase text-[#555555] block mb-4">
+                PRUÉBALO TÚ MISMO
+              </span>
+              <h2 className="font-headline font-bold text-[clamp(36px,6vw,72px)] leading-[0.95] tracking-[-0.01em] uppercase text-[#0a0a0a] mb-4">
+                ESTO ES LO QUE PODEMOS CONSTRUIR PARA TI
+              </h2>
+              <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.6] text-[#555555] max-w-[720px]">
+                Demos interactivas creadas por nuestro equipo para mostrar calidad de ejecución y proceso de trabajo. Son conceptos ilustrativos, no clientes reales — interactúa con ellos y luego construyamos el tuyo.
+              </p>
+            </div>
+            <div className="shrink-0 pb-1">
+              <a
+                href="https://caciqueportafolio.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 font-headline font-bold text-lg md:text-xl uppercase tracking-wider text-[#0a0a0a] hover:text-[#555555] transition-colors group underline underline-offset-4 decoration-2"
+              >
+                <span>Ver más proyectos</span>
+                <span className="group-hover:translate-x-1 group-hover:-translate-y-0.5 transition-transform duration-200 inline-block">↗</span>
+              </a>
+            </div>
+          </div>
         </ScrollReveal>
 
         {/* Category Filters */}
@@ -119,7 +134,16 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({ onSelectProj
         </div>
 
         <ScrollReveal direction="up" delay={0.2}>
-          <div className="text-center mt-12">
+          <div className="text-center mt-12 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+            <a
+              href="https://caciqueportafolio.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary w-full sm:w-auto inline-flex items-center justify-center gap-2 group"
+            >
+              <span>Ver más proyectos</span>
+              <span className="group-hover:translate-x-1 group-hover:-translate-y-0.5 transition-transform duration-200 inline-block">↗</span>
+            </a>
             <button
               onClick={onOpenConsultation}
               className="btn-secondary w-full sm:w-auto"
@@ -132,3 +156,4 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({ onSelectProj
     </section>
   );
 };
+
